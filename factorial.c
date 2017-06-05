@@ -1,13 +1,11 @@
 #include<stdio.h>
-#include<conio.h>
-int main()
-{
-int a,n,i,factorial=1;
-printf("\n enter the number:");
-scanf("%d",&n);
-for(i=1;i<=n;++i){
-        factorial *=i;
-}
-printf("\n the factorial of a is%d",factorial);
+int main(){
+int i,f=1,num;
+printf("Enter a number: ");
+scanf("%d",&num);
+for(i=1;i<=num;i++)
+f=f*i;
+printf("Factorial of %d is: %d",num,f);
 return 0;
 }
+
